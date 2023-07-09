@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/nav_g1">
+            <!--<item
+                android:id="@+id/home"
+                android:icon="@drawable/sidehome"
+                android:title="Home" />-->
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/sidemyprofile"
+                android:title="deliverMY" />
+
+            <item
+                android:id="@+id/myWallet"
+                android:icon="@drawable/sidemywallet"
+                android:title="myWallet" />
+            <item
+                android:id="@+id/nav_myjobs"
+                android:icon="@drawable/sidemyorder"
+                android:title="Order History" />
+            <item
+                android:id="@+id/promotions"
+                android:icon="@drawable/sidepromotions"
+                android:title="Promotions" />
+
+            <item
+                android:id="@+id/notifications"
+                android:icon="@drawable/sidenotification"
+                android:title="Notifications" />
+            <item
+                android:id="@+id/nav_message"
+                android:icon="@drawable/sidemessage"
+                android:title="Messages" />
+
+            <item
+                android:id="@+id/feedback"
+                android:icon="@drawable/sidefeedback"
+                android:title="Feedback" />
+
+            <item
+                android:id="@+id/invitefriends"
+                android:icon="@drawable/sideinvitefriends"
+                android:title="Invite Friends" />
+
+
+        </group>
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/nav_g2">
+            <item
+                android:id="@+id/nav_insurance"
+                android:icon="@drawable/sideinsurance"
+                android:title="Insurance Policy" />
+
+            <item
+                android:id="@+id/nav_termsconditions"
+                android:icon="@drawable/sideterms"
+                android:title="@string/terms_condition" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/sidelogout"
+                android:title="Log Out" />
+
+        </group>
+    </group>
+</menu>
+

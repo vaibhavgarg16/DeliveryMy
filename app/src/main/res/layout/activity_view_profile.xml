@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".activities.ViewProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="20dp"
+        tools:context=".activities.SignupActivity">
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/delivermyiconround" />
+
+        <View
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgId"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/etFirstNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mainyellow"
+                android:hint="First Name"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgId"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etLastNameId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mainyellow"
+                android:hint="Last Name"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_nric"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgId"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etNricId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mainyellow"
+                android:hint="NRIC/Passport Number"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgId"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etMailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/mainyellow"
+                android:hint="Email"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_shape_btn_login"
+        android:text="Update" />
+
+</FrameLayout>

@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TrackOrderActivity">
+
+    <FrameLayout
+        android:id="@+id/toplinear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Order Accepted"
+            android:textColor="@color/royalblue" />
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Job Title: "
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/jobtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="car"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="In Progress"
+                    android:textColor="@color/royalbluehint"/>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID: "
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/summaryorderID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="1235568"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp" />
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:text="In Progress"
+                    android:textColor="@color/royalbluehint"/>-->
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/searching_datetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/royalblue"
+                android:textColorHint="@color/royalbluehint"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cartype"
+                android:text="Economy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/royalblue"
+                android:textColorHint="@color/royalbluehint"
+                android:textSize="16sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_dialog"
+                android:backgroundTint="@color/quantum_bluegrey50"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/ridername"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Ride One"
+                            android:textColor="@color/royalblue"
+                            android:textSize="18sp" />
+
+                        <Button
+                            android:id="@+id/messagerider"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/whatsappicon" />
+
+                        <Button
+                            android:id="@+id/callRider"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/callicon" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile Number : 9847895623"
+                            android:textColor="@color/royalblue" />
+
+                        <TextView
+                            android:id="@+id/riderPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/royalblue" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle Reg Number : RJ20PQ1234"
+                            android:textColor="@color/royalblue" />
+
+                        <TextView
+                            android:id="@+id/vehicleno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/royalblue" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Fare"
+                        android:textColor="@color/royalblue" />
+
+
+                    <TextView
+                        android:id="@+id/total_amount_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="RM 50.40"
+                        android:textColor="@color/royalblue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total KM"
+                        android:textColor="@color/royalblue" />
+
+
+                    <TextView
+                        android:id="@+id/totalkm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="50 KM"
+                        android:textColor="@color/royalblue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/paymentinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Payment Information"
+                android:textColor="@color/royalblue"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:id="@+id/pickupBoxLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/greendot" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+
+
+                    <TextView
+                        android:id="@+id/pickuptxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pickup Location"
+                        android:textStyle="bold"
+                        android:textColor="@color/royalblue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/order_hotel_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp"
+                        android:text="jalan Setia villa 1,\nmalaysia"
+                        android:textColor="@color/royalblue"
+                        android:textColorHint="@color/royalbluehint"
+                        android:textSize="18sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/pickupAdditional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="4dp"
+                            android:background="@color/light_gray" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Additional Details"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/additionalName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="20,Jalan Perak Kuala Lumpur"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/additionalText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="50450 Kuala Lumpur,"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/additionalMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="malaysia"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!--060416sapna-->
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/googlemapicon" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mapicon" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:id="@+id/dropoffBoxLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mapicon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop Off Location"
+                        android:textStyle="bold"
+                        android:textColor="@color/royalblue"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/order_user_address_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp"
+                        android:text="jalan Setia villa 1,\nmalaysia"
+                        android:textColor="@color/royalblue"
+                        android:textColorHint="@color/royalbluehint"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/dropoffAdditional"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="4dp"
+                            android:background="@color/light_gray" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Additional Details:"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/additionalName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Wilayah Persekutuan Kuala Lumpur"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/additionalText1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/additionalMobile1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <!--060416sapna-->
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/googlemapicon" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mapicon" />
+            </LinearLayout>
+
+
+            <!--c Details-->
+
+            <View
+                android:id="@+id/dropoffview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:id="@+id/dropoffBoxLinear_taskC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="6">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/mapicon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drop Off Location"
+                        android:textColor="@color/royalblue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_address_taskC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingRight="10dp"
+                        android:textColor="@color/royalblue"
+                        android:textColorHint="@color/royalbluehint"
+                        android:textSize="18sp" />
+
+
+                    <!--060416sapna-->
+
+                    <LinearLayout
+                        android:id="@+id/dropoffAdditional11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="4dp"
+                            android:background="@color/light_gray" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Additional Details:"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/additionalName11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+
+                        <TextView
+                            android:id="@+id/additionalText11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/additionalMobile11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:textColor="@color/royalblue"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!--060416sapna-->
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/user_location_divtaskC"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/googlemapicon" />
+
+                <ImageView
+                    android:id="@+id/user_call_divOLDtaskC"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/callicon"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+            <!--c Details-->
+
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Order Details"
+                android:textColor="@color/royalblue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/inst_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_border"
+                android:padding="5dp"
+                android:textColor="@color/royalblue"
+                android:textSize="16sp" />-->
+
+
+            <!--adding additional-->
+            <RelativeLayout
+                android:id="@+id/payatLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pay at"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/payattext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rainingLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raining"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rainingtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/insuranceLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/insurancetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/addNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:drawablePadding="10dp"
+                android:text="driver Note"
+                android:textColor="@color/royalblue"
+                android:textSize="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/specificvehicleLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Specific Vehicle Required"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vehicletext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/chosenbyrider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chosen By Rider"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/chosentext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/ridertipLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rider Tip"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ridertiptext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/estimatedLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estimated Cost"
+                    android:textColor="@color/royalblue"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/estimatedtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity=""
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/royalblue"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/uploadtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Uploaded Photo"
+                android:textColor="@color/royalblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/uploadedimg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" />
+
+
+            <!--adding additional-->
+
+            <RelativeLayout
+                android:id="@+id/track_order_div"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_shape_btn_login">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/royalblue"
+                    android:gravity="center"
+                    android:text="Track Order"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ordercancellinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/cancelorder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="5dp"
+                    android:text="Cancel order"
+                    android:textAllCaps="true"
+                    android:textColor="@color/royalblue" />
+
+                <Button
+                    android:id="@+id/complainbtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:padding="5dp"
+                    android:text="Complain"
+                    android:textAllCaps="true"
+                    android:textColor="@color/royalblue" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/transparent_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_tint"
+        android:visibility="gone">
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/progressDialog"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_shape_dialog_white">
+
+        <com.gmail.samehadar.iosdialog.CamomileSpinner
+            android:id="@+id/orderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spinnerColor="@color/colorPrimary" />
+    </RelativeLayout>-->
+</FrameLayout>

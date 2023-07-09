@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".activities.FeedbackActivity">
+
+    <TextView
+        android:text="Feedback:"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:gravity="top|left"
+        android:hint="Subject"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/textArea_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border"
+        android:padding="10dp"
+        android:gravity="top|left"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>

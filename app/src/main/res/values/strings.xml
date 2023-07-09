@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">deliverMY</string>
+
+
+    //Goget
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hello</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Quit">Quit</string>
+    <string name="statementquit">Are you sure you want to quit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="terms_condition"><![CDATA[T&C]]></string>
+    <string name="termandcondition">I accept the <u>Terms and Conditions</u> of this e-service</string>
+    <string name="gogetfee">Fee is suggested on distance, time and effort taken to complete the job</string>
+    <string name="map_key">AIzaSyD7DB_FFjT7BD95SDa4Bv5AYEXTW-0_yys</string>
+    <string name="heading">Our deliverMY Can be your extra help. \n Here are some examples</string>
+    <!-- <string name="setup">Setup for parties \n Send pets to groomers \n Get help to move items \n Assemble furniture</string>-->
+
+    <string name="setup">Daily-Paid Maids\n Daily-Paid Drivers\n Send pets to groomers\n Get help to move or assemble furniture \n Daily-Paid Painters \n Plumbers</string>
+    <string name="helperedit">Include any requirements(e.g. Who to contact, What to bring, How to do the task well etc)</string>
+
+    <string name="termconditontext">*Cash on delivery only. \n*No deliverMY credits and/or promo codes are allowed to be used for this deal.</string>
+
+    <string name="reviewuser1">- R.Shereina</string>
+    <string name="reviewuser2">- Raffe Firus</string>
+    <string name="reviewuser3">- Nurliny Ibrahim</string>
+    <string name="reviewuser4">- Azlan Hanafi</string>
+    <string name="reviewuser5">- Lee How Chan</string>
+    <string name="reviewuser6">- Abdul Rahim</string>
+    <string name="reviewuser7">- Amira Hassan</string>
+
+    <string name="review1">I forgot to bring my laptop charger to an important presentation. Luckily deliverMY helped me to deliver the charger within 30 minutes to me. Very helpful service!</string>
+    <string name="review2">It is always helpful to have a rider at any time to deliver my company documents to anywhere and anytime. Efficient service with reasonable price.</string>
+    <string name="review3">Easy, Cheap and Efficient. Best service. Keep it up team.</string>
+    <string name="review4">Reliable and trustable! Rider helped me to buy what I needed on time.</string>
+    <string name="review5">I was stuck in traffic. Late to work. But rider saved my day!</string>
+    <string name="review6">Forgot my house keys and they helped me within 40 minutes. Recommended and easy!</string>
+    <string name="review7">Easy way to get your groceries from home. Rider helped me to buy tomatos on time.</string>
+
+
+    <string name="alert_internet_not_connect">Internet is not connected. please connect to internet.</string>
+    <string name="btn_goto_setting">Goto setting</string>
+    <string name="btn_close">Close</string>
+
+    <string name="tab_text_1">Completed</string>
+    <string name="tab_text_2">Cancelled</string>
+    <string name="tab_text_3">In Progress</string>
+
+
+    <!--    <string name="googleApiKey">AIzaSyCnwVrV8o53fNSOcEhiXsokB9QZCEeyXUA</string>-->
+    <string name="googleApiKey">AIzaSyDT2Mzp7PGGi3n0x5G9oAIOU6ti9UKL7to</string>
+
+    <!--    Permissions    -->
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+</resources>

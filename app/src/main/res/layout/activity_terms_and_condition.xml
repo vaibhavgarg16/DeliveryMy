@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TermsAndCondition">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/appbar" />
+
+    <TextView
+        android:text="Terms and Condition:"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="These Terms of Use (“Terms”) govern the access or use by you, an individual, of applications, websites, content, products, and services (the “Services”) made available by Uber India Systems Private Limited (“Uber”) a private limited liability company established in India , having its registered office at Regus Business Platinum Centre Pvt. Ltd., Level 13, Platinum Techno Park, Plot No.17/18, Sec-30A, Vashi, Navi Mumbai, Maharashtra-400705 and having a place of business at SCO 300, Sector 29, Gurgaon - 122007, Haryana along with office in other states with Corporate Identification Number U74120MH2013FTC247008 . PLEASE READ THESE TERMS CAREFULLY BEFORE ACCESSING OR USING THE SERVICES. Your access and use of the Services constitute your agreement to be bound by these Terms, which establishes a contractual relationship between you and Uber. If you do not agree to these Terms, you may not access or use the Services. These Terms expressly supersede prior agreements or arrangements with you. Uber may immediately terminate these Terms or any Services with respect to you, or generally cease offering or deny access to the Services or any portion thereof, at any time for any reason. Supplemental terms may apply to certain Services, such as policies for a particular event, activity or promotion, and such supplemental terms will be disclosed to you in connection with the applicable Services. Supplemental terms are in addition to, and shall be deemed a part of, the Terms for the purposes of the applicable Services. Supplemental terms shall prevail over these Terms in the event of a conflict with respect to the applicable Services. Uber may amend the Terms related to the Services from time to time. Amendments will be effective upon Uber’s posting of such updated Terms at this location or the amended policies or supplemental terms on the applicable Service. Your continued access or use of the Services after such posting constitutes your consent to be bound by the Terms, as amended. Our collection and use of personal information in connection with the Services is as provided in Uber’s Privacy Policy located at https://www.uber.com/legal. Uber may provide to a claims processor or an insurer any necessary information (including your contact information) if there is a complaint, dispute or conflict, which may include an accident, involving you and a Third Party Provider (including a transportation network company driver) and such information or data is necessary to resolve the complaint, dispute or conflict."/>
+
+    </LinearLayout>
+</ScrollView>

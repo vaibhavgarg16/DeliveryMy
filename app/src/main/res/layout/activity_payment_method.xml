@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PaymentMethodActivity">
+
+    <include layout="@layout/appbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtad"
+                android:text="Auto Debit"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/img"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/img"
+                android:src="@drawable/icn_exclamation"
+                android:layout_toLeftOf="@+id/txtad1"
+                android:layout_marginRight="5dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+<!--            android:layout_alignBottom="@+id/etExpDate"-->
+
+            <TextView
+                android:id="@+id/txtad1"
+                android:text="About Payment Methods"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/balanceLayoutId"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgStart"
+                android:src="@drawable/icn_bank"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:text="Online Banking"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imgStart"
+                android:layout_toLeftOf="@+id/txtVersion"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgLast"
+                android:src="@drawable/next_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:id="@+id/txtVersion"
+                android:text="Inactive"
+                android:textSize="18sp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/imgLast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/creditLayoutId"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgcard"
+                android:src="@drawable/icn_creditcard_color"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/txtcd"
+                android:text="Credit/Debit Card"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/imgcard"
+                android:layout_toLeftOf="@+id/txtInacitve"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgarrow"
+                android:src="@drawable/next_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true" />
+            <TextView
+                android:id="@+id/txtInacitve"
+                android:text="Inactive"
+                android:textSize="18sp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toLeftOf="@+id/imgarrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtSub"
+                android:text="Visa/Master Card/JCB/Diners/Discover"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtcd"
+                android:layout_alignLeft="@+id/txtcd"
+                android:layout_toLeftOf="@+id/txtInacitve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

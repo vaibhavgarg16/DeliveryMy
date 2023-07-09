@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Confirm for pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp"
+            android:text="just checking - the pickup spot\n
+you've set is far from your current\nlocation."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:padding="15dp"
+        android:text="Edit pickup slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/confirm"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

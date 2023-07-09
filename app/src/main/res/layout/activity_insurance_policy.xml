@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".activities.InsurancePolicyActivity">
+
+    <include layout="@layout/appbar" />
+
+    <TextView
+        android:text="Insurance Policy:"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="As long as you maintain comprehensive and collision coverage on your personal auto insurance, Uber maintains insurance on your behalf that will kick in to provide protection for physical damage to your car up to its actual cash value, regardless of who is at fault. There is a $2,500 deductible that you must pay first before this coverage applies. Certain vehicles offered through the Vehicle Marketplace are subject to a $1,000 deductible."/>
+
+</LinearLayout>

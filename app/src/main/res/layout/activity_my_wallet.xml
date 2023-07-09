@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MyWallet">
+
+    <include layout="@layout/appbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Balance"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/balanceLayoutId"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgStart"
+                    android:src="@drawable/money"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:text="My Balance"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@id/imgStart"
+                    android:layout_toLeftOf="@+id/txtVersion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imgLast"
+                    android:src="@drawable/next_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    android:id="@+id/txtVersion"
+                    android:text="v 0.00"
+                    android:textSize="18sp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/imgLast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Points"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/pointsLayoutId"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/pointimgStart"
+                    android:src="@drawable/money"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:text="Points"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@id/pointimgStart"
+                    android:layout_toLeftOf="@+id/pointtxtVersion"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/pointimgLast"
+                    android:src="@drawable/next_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    android:id="@+id/pointtxtVersion"
+                    android:text="v 0.00"
+                    android:textSize="18sp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/pointimgLast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Payment Methods"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:id="@+id/paymentMethodLayoutId"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/imgStart1"
+                    android:src="@drawable/shield"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"/>
+                <TextView
+                    android:text="simply Hop out, Automatically Pay"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/imgStart1"
+                    android:layout_toLeftOf="@+id/txtEnable"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/imgLast1"
+                    android:src="@drawable/next_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true" />
+                <TextView
+                    android:id="@+id/txtEnable"
+                    android:text="Enable"
+                    android:textSize="18sp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@+id/imgLast1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
